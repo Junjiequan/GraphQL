@@ -22,3 +22,16 @@ jest config > package.json
   },
 
 ```
+
+
+## React 18 render 
+
+```
+import Button from '../Button/Button';
+import { createRoot } from 'react-dom/client';
+
+it('renders without crashing', () => {
+  const root = createRoot(document.createElement('div'));
+  root.render(<Button label='nooo'></Button>);
+});
+```
