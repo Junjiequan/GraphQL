@@ -1,7 +1,7 @@
 # GraphQL
 
 ## Jest packages
-`npm i -D @testing-library/react jest-dom jest-environment-jsdom react-test-renderer ts-jest `
+`npm i -D @testing-library/react jest-dom jest-environment-jsdom react-test-renderer ts-jest identity-obj-proxy `
 
 ## Script > package.json 
 ```
