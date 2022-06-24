@@ -1,12 +1,15 @@
 # GraphQL
 
 ## Jest packages
+
 `npm i -D @testing-library/react jest-dom jest-environment-jsdom react-test-renderer ts-jest identity-obj-proxy `
 
-## Script > package.json 
+## Script > package.json
+
 ```
 "test:"jest"
 ```
+
 jest config > package.json
 
 ```
@@ -23,8 +26,7 @@ jest config > package.json
 
 ```
 
-
-## React 18 render 
+## React 18 render - [stackOverFLow](https://stackoverflow.com/questions/71668256/deprecation-notice-reactdom-render-is-no-longer-supported-in-react-18)
 
 ```
 import Button from '../Button/Button';
