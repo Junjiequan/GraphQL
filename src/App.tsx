@@ -6,6 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
+      Test
       <Button label={'random button'} />
     </div>
   );
