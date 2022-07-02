@@ -1,4 +1,8 @@
-# GraphQL
+# Jest
+
+## Zustand
+
+Redux alternative - Zustand: [Doc](https://zustand.surge.sh/)
 
 ## Jest packages
 
