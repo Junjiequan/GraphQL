@@ -10,8 +10,9 @@ const Button = ({ label }: { label: string }) => {
       <button onClick={increment()}>add1</button>
       <button onClick={multiplyBy2}>multiply</button>
       <button data-testid='button' className='button' onClick={increment(100)}>
-        {count}
+        {label}
       </button>
+      <div>{count}</div>
     </>
   );
 };

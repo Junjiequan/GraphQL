@@ -1,4 +1,4 @@
-import Button from '../Button/Button';
+import Button from './Button';
 import { createRoot } from 'react-dom/client';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
