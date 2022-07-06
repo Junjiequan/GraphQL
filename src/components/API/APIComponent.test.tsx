@@ -7,16 +7,20 @@ import APIComponent from './APIComponent';
 const URL = 'http://localhost:3000';
 const server = setupServer(
   rest.get(`${URL}/api`, (req, res, ctx) => {
-    return res(ctx.json({ name: 'John son' }));
+    return res(
+      ctx.json({
+        name: 'helllo jon',
+      })
+    );
   })
 );
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
-test('renders data correctly', async () => {
+test('renders correct data', async () => {
   render(<APIComponent />);
 
   const data = await waitFor(() => screen.getByRole('contentinfo'));
-  expect(data.textContent).toBe('hello');
+  expect(data).toHaveTextContent('helllo jon');
 });

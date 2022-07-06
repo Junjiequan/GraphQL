@@ -7,9 +7,9 @@ const Button = ({ label }: { label: string }) => {
   const multiplyBy2 = () => setCount((prev) => prev * 2);
   return (
     <>
-      <button onClick={increment()}>add1</button>
+      <button onClick={increment}>add1</button>
       <button onClick={multiplyBy2}>multiply</button>
-      <button data-testid='button' className='button' onClick={increment(100)}>
+      <button data-testid='button' className='button' onClick={increment}>
         {label}
       </button>
       <div>{count}</div>
