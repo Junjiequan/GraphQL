@@ -1,5 +1,4 @@
-import { renderHook, act } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import { renderHook, act } from '@testing-library/react-hooks';
 import useCounter from './useCounter';
 
 test('should increment', () => {
