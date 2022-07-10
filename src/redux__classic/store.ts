@@ -26,11 +26,14 @@ export const counterSlice = createSlice({
 
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
-export const store = configureStore({
-  reducer: {
-    counter: counterSlice.reducer,
-  },
-});
+export const createStore = () =>
+  configureStore({
+    reducer: {
+      counter: counterSlice.reducer,
+    },
+  });
+
+export const store = createStore();
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

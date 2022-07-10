@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState, CounterState, increment, decrement, incrementByAmount } from '../../redux__classic/store';
+import { RootState, increment, decrement, incrementByAmount } from '../../redux__classic/store';
 
 const ReduxCounter = () => {
   const [amount, setAmount] = useState<number>(0);
-  const count: CounterState = useSelector((state: RootState) => state.counter);
+  const count = useSelector((state: RootState) => state.counter);
   const dispatch = useDispatch();
   return (
     <>
@@ -18,7 +18,9 @@ const ReduxCounter = () => {
         />
         <button onClick={() => dispatch(incrementByAmount(amount))}>change by amount</button>
       </div>
-      <h1 style={{ color: 'red', fontWeight: 'bold' }}> {count.value}</h1>
+      <h1 role='contentinfo' style={{ color: 'red', fontWeight: 'bold' }}>
+        {count.value}
+      </h1>
     </>
   );
 };

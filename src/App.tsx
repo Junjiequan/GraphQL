@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      <b>Test Buttons</b>
+      <b>TestApp Buttons</b>
       <Button label={'random button'} />
       <b>Test Redux Store</b>
       <ReduxCounter />
