@@ -1,7 +1,7 @@
 .App {
-  border: 1px solid red;
   text-align: center;
   display: flex;
+  position:relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,5 +10,18 @@
 
 
 button {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
+  padding: .2rem .8rem;
+  margin-bottom: .9rem;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  position:sticky;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  align-self: start;
+  flex-direction: column;
+
 }
